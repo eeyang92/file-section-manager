@@ -1,6 +1,6 @@
 {
   "name": "file-section-manager",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Manage file sections",
   "main": "FileSectionManager.js",
   "types": "FileSectionManager.d.ts",
@@ -9,8 +9,8 @@
     "email": "eeyang92@gmail.com"
   },
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/eeyang92/file-section-manager.git"
+    "type": "git",
+    "url": "https://github.com/eeyang92/file-section-manager.git"
   },
   "license": "MIT",
   "keywords": [
