@@ -1,0 +1,37 @@
+{
+  "name": "file-section-manager",
+  "version": "1.0.0",
+  "description": "Manage file sections",
+  "main": "FileSectionManager.js",
+  "types": "FileSectionManager.d.ts",
+  "author": {
+    "name": "Eric Yang",
+    "email": "eeyang92@gmail.com"
+  },
+  "license": "MIT",
+  "keywords": [
+    "file",
+    "section",
+    "manager",
+    "management"
+  ],
+  "scripts": {
+    "pre-pub:patch": "yarn _pre-pub -- patch && yarn copy",
+    "pre-pub:minor": "yarn _pre-pub -- minor && yarn copy",
+    "pre-pub:major": "yarn _pre-pub -- major && yarn copy",
+    "_pre-pub": "yarn build && npm version -f",
+    "pub:latest": "git push --tags origin master && cd dist && npm publish",
+    "pub:beta": "git push --tags origin beta && cd dist && npm publish --tag beta",
+    "clear-dist": "rm -rf dist/*",
+    "build": "yarn clear-dist && yarn copy && NODE_ENV=production tsc",
+    "copy": "cp -rf package.json README.md LICENSE dist",
+    "watch": "tsc -w"
+  },
+  "devDependencies": {
+    "typescript": "^3.2.2"
+  },
+  "dependencies": {
+    "@types/node": "^10.12.18",
+    "section-manager": "^1.0.0"
+  }
+}
