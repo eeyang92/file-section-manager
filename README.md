@@ -1,6 +1,6 @@
 # Section Manager
 
-Lightweight section management of Files. Wraps `section-manager`.
+Lightweight section management of Files. Wraps [`section-manager`](https://github.com/eeyang92/section-manager).
 
 ## Installation
 
